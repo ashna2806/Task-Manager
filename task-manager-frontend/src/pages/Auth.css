@@ -1,0 +1,385 @@
+.auth-container,
+.create-task-page,
+.profile-page {
+  min-height: calc(100vh - 80px);
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px;
+  height:max-content;
+}
+
+.auth-card {
+  background: rgba(13, 27, 42, 0.9);
+  backdrop-filter: blur(20px);
+
+  width: 800px;
+  max-width: 95%;
+
+  padding: 45px;
+
+  border-radius: 24px;
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.5),
+    0 0 20px rgba(60, 106, 115, 0.25);
+
+  color: white;
+}
+
+.auth-card h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 35px;
+  
+}
+.link{
+  color: aqua;
+}
+.auth-card input {
+  width: 100%;
+
+  padding: 18px;
+  margin-bottom: 20px;
+
+  background-color: #1b263b;
+  border: 1px solid #415a77;
+  border-radius: 12px;
+
+  color: white;
+  font-size: 1.1rem;
+}
+
+.auth-card button {
+  width: 100%;
+  padding: 18px;
+
+  background-color: #3c6a73;
+  color: white;
+
+  border: none;
+  border-radius: 12px;
+
+  font-size: 1.1rem;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.auth-card button:hover {
+  transform: translateY(-3px);
+}
+
+.auth-card p {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 1.05rem;
+}
+
+
+
+.create-task {
+  background: rgba(13, 27, 42, 0.9);
+  backdrop-filter: blur(20px);
+
+  width: 800px;
+  max-width: 95%;
+
+  padding: 70px;
+
+  border-radius: 24px;
+
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.5),
+    0 0 20px rgba(60, 106, 115, 0.25);
+
+  color: white;
+}
+
+.create-task h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 35px;
+}
+
+.create-task input,
+.create-task textarea,
+.create-task select {
+  width: 100%;
+
+  padding: 18px;
+  margin-bottom: 18px;
+
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 12px;
+
+  color: white;
+  font-size: 1.05rem;
+}
+
+.create-task textarea {
+  min-height: 180px;
+}
+
+.create-task button {
+  width: 100%;
+  padding: 18px;
+
+  background: #3c6a73;
+  color: white;
+
+  border: none;
+  border-radius: 12px;
+
+  font-size: 1.1rem;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.create-task button:hover {
+  transform: translateY(-3px);
+}
+
+/* profile */
+.profile-container {
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #1f2937;
+  color: white;
+  border-radius: 15px;
+}
+
+.profile-avatar {
+  width: 90px;
+  height: 90px;
+  margin: 20px auto;
+  border-radius: 50%;
+  background: #396c78;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.profile-container p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 15px 0;
+  font-size: 1.1rem;
+}
+
+.logout-btn,
+.delete-account-btn {
+  margin-top: 20px;
+  margin-right: 10px;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}
+
+.logout-btn {
+  background: rgb(51, 118, 135);
+}
+
+.delete-account-btn {
+  background: rgb(51, 118, 135);;
+}
+.edit-profile-btn {
+  background-color: #3c6a73;   
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 18px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.edit-profile-btn:hover {
+  background-color: #355e67;  
+  transform: translateY(-2px);
+}
+/* ================= TABLETS ================= */
+
+@media (max-width: 1024px) {
+  .auth-card,
+  .create-task,
+  .profile-container {
+    width: 90%;
+    padding: 40px;
+  }
+
+  .auth-card h1,
+  .create-task h1 {
+    font-size: 2.5rem;
+  }
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+  .auth-container,
+  .create-task-page {
+    padding: 15px;
+  }
+
+  .auth-card,
+  .create-task,
+  .profile-container {
+    width: 100%;
+    padding: 25px;
+    border-radius: 18px;
+  }
+
+  .auth-card h1,
+  .create-task h1 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+  }
+
+  .auth-card input,
+  .create-task input,
+  .create-task textarea,
+  .create-task select {
+    padding: 14px;
+    font-size: 1rem;
+  }
+
+  .auth-card button,
+  .create-task button {
+    padding: 14px;
+    font-size: 1rem;
+  }
+
+  .profile-container {
+    padding: 25px;
+  }
+
+  .profile-avatar {
+    width: 75px;
+    height: 75px;
+    font-size: 1.7rem;
+  }
+
+  .profile-container p {
+    font-size: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .logout-btn,
+  .delete-account-btn,
+  .edit-profile-btn {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+/* ================= SMALL PHONES ================= */
+
+@media (max-width: 480px) {
+  .auth-card,
+  .create-task,
+  .profile-container {
+    padding: 18px;
+  }
+
+  .auth-card h1,
+  .create-task h1 {
+    font-size: 1.7rem;
+  }
+
+  .auth-card input,
+  .create-task input,
+  .create-task textarea,
+  .create-task select {
+    font-size: 0.95rem;
+  }
+
+  .profile-avatar {
+    width: 65px;
+    height: 65px;
+    font-size: 1.5rem;
+  }
+
+  .profile-container p {
+    font-size: 0.95rem;
+  }
+}
+
+/* ================= LARGE LAPTOPS ================= */
+
+@media (min-width: 1440px) {
+  .auth-card,
+  .create-task {
+    width: 900px;
+  }
+
+  .profile-container {
+    max-width: 850px;
+  }
+}
+
+/* ================= 4K SCREENS ================= */
+
+@media (min-width: 2560px) {
+  .auth-card,
+  .create-task {
+    width: 1200px;
+    padding: 80px;
+  }
+
+  .profile-container {
+    max-width: 1100px;
+    padding: 50px;
+  }
+
+  .auth-card h1,
+  .create-task h1 {
+    font-size: 4rem;
+  }
+
+  .auth-card input,
+  .create-task input,
+  .create-task textarea,
+  .create-task select {
+    padding: 24px;
+    font-size: 1.4rem;
+  }
+
+  .auth-card button,
+  .create-task button,
+  .logout-btn,
+  .delete-account-btn,
+  .edit-profile-btn {
+    padding: 22px;
+    font-size: 1.3rem;
+  }
+
+  .profile-avatar {
+    width: 130px;
+    height: 130px;
+    font-size: 3rem;
+  }
+
+  .profile-container p {
+    font-size: 1.5rem;
+  }
+}

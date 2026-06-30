@@ -1,0 +1,349 @@
+.dashboard-title {
+  text-align: center;
+  color: white;
+  font-size: 3rem;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.dashboard-header {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.dashboard-header h1 {
+  color: white;
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.dashboard-header p {
+  color: #9ca3af;
+  font-size: 1.1rem;
+}
+
+.dashboard-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  gap: 30px;
+
+  width: 100%;
+  max-width: 1400px;
+
+  margin: 50px auto;
+  padding: 20px;
+}
+
+
+.dashboard-card {
+  background: linear-gradient(
+    135deg,
+    #1e383e 0%,
+    #2a4e57 100%
+  );
+
+  color: white;
+
+  width: 280px;
+  min-height: 180px;
+
+  padding: 25px;
+
+  border-radius: 18px;
+
+  text-align: center;
+
+  box-shadow:
+    0 10px 20px rgba(0, 0, 0, 0.4),
+    0 0 10px rgba(59, 130, 246, 0.15);
+
+  transition: all 0.3s ease;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-6px);
+
+  box-shadow:
+    0 16px 30px rgba(0, 0, 0, 0.5),
+    0 0 15px rgba(59, 130, 246, 0.25);
+}
+
+.card-icon {
+  font-size: 3rem;
+  color: #408a99;
+  margin-bottom: 15px;
+}
+
+.dashboard-card h3 {
+  color: #408a99;
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+
+.dashboard-card p {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+
+.progress-section {
+  width: 80%;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.progress-section h2 {
+  margin-bottom: 15px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 20px;
+
+  background-color: #374151;
+
+  border-radius: 10px;
+
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #22c55e;
+
+  border-radius: 10px;
+
+  transition: width 0.5s ease;
+}
+
+.progress-section p {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+
+.recent-tasks {
+  width: 80%;
+  margin: 40px auto;
+
+  background-color: #1f2937;
+
+  padding: 20px;
+
+  border-radius: 12px;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.recent-tasks h2 {
+  margin-bottom: 20px;
+  color: white;
+}
+
+.recent-task-item {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 12px 0;
+
+  border-bottom: 1px solid #374151;
+}
+
+.recent-task-item:last-child {
+  border-bottom: none;
+}
+
+.recent-task-item span:first-child {
+  color: white;
+}
+
+.recent-task-item span:last-child {
+  color: #60a5fa;
+  font-weight: bold;
+}
+
+
+form {
+  max-width: 500px;
+  margin: 40px auto;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+
+  border-radius: 6px;
+  border: 1px solid #4b5563;
+}
+/* ================= TABLETS ================= */
+
+@media (max-width: 1024px) {
+  .dashboard-container {
+    gap: 20px;
+    padding: 15px;
+  }
+
+  .dashboard-card {
+    width: 240px;
+  }
+
+  .dashboard-title,
+  .dashboard-header h1 {
+    font-size: 2.5rem;
+  }
+
+  .progress-section,
+  .recent-tasks {
+    width: 90%;
+  }
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+  .dashboard-title,
+  .dashboard-header h1 {
+    font-size: 2rem;
+  }
+
+  .dashboard-header p {
+    font-size: 1rem;
+    padding: 0 15px;
+  }
+
+  .dashboard-container {
+    flex-direction: column;
+    gap: 20px;
+    margin: 30px auto;
+  }
+
+  .dashboard-card {
+    width: 100%;
+    max-width: 350px;
+    min-height: auto;
+    padding: 20px;
+  }
+
+  .card-icon {
+    font-size: 2.5rem;
+  }
+
+  .dashboard-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .dashboard-card p {
+    font-size: 2rem;
+  }
+
+  .progress-section,
+  .recent-tasks {
+    width: 95%;
+  }
+
+  .recent-task-item {
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+  }
+}
+
+/* ================= SMALL PHONES ================= */
+
+@media (max-width: 480px) {
+  .dashboard-title,
+  .dashboard-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .dashboard-card {
+    padding: 18px;
+  }
+
+  .card-icon {
+    font-size: 2rem;
+  }
+
+  .dashboard-card p {
+    font-size: 1.8rem;
+  }
+
+  .progress-bar {
+    height: 16px;
+  }
+}
+
+/* ================= LARGE LAPTOPS ================= */
+
+@media (min-width: 1440px) {
+  .dashboard-container {
+    max-width: 1700px;
+    gap: 40px;
+  }
+
+  .dashboard-card {
+    width: 320px;
+    min-height: 210px;
+  }
+
+  .dashboard-title,
+  .dashboard-header h1 {
+    font-size: 3.5rem;
+  }
+}
+
+/* ================= 4K SCREENS ================= */
+
+@media (min-width: 2560px) {
+  .dashboard-title,
+  .dashboard-header h1 {
+    font-size: 5rem;
+  }
+
+  .dashboard-header p {
+    font-size: 1.8rem;
+  }
+
+  .dashboard-container {
+    max-width: 2300px;
+    gap: 60px;
+  }
+
+  .dashboard-card {
+    width: 420px;
+    min-height: 280px;
+    padding: 40px;
+  }
+
+  .card-icon {
+    font-size: 4.5rem;
+  }
+
+  .dashboard-card h3 {
+    font-size: 2rem;
+  }
+
+  .dashboard-card p {
+    font-size: 4rem;
+  }
+
+  .progress-section,
+  .recent-tasks {
+    width: 70%;
+  }
+
+  .recent-tasks h2,
+  .progress-section h2 {
+    font-size: 2rem;
+  }
+
+  .recent-task-item {
+    font-size: 1.5rem;
+  }
+}
