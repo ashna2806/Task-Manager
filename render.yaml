@@ -1,0 +1,24 @@
+# Exported from Render on 2026-06-30T10:14:36Z
+version: "1"
+projects:
+- name: My project
+  environments:
+  - name: Production
+    services:
+    - type: web
+      name: task-manager-backend-api
+      runtime: node
+      repo: https://github.com/ashna2806/Task-Manager
+      plan: free
+      envVars:
+      - key: JWT_SECRET
+        sync: false
+      - key: MONGO_URI
+        sync: false
+      region: oregon
+      buildCommand: npm install
+      startCommand: node server.js
+      autoDeployTrigger: commit
+      rootDir: task-manager-backend
+Show more
+
