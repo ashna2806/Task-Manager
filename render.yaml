@@ -20,5 +20,5 @@ projects:
       startCommand: node server.js
       autoDeployTrigger: commit
       rootDir: task-manager-backend
-Show more
+Show more:
 
