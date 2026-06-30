@@ -13,7 +13,7 @@ projects:
       envVars:
       - key: JWT_SECRET
         sync: false
-      - key: MONGO_URI:
+      - key: MONGO_URI
         sync: false
       region: oregon
       buildCommand: npm install
